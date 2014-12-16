@@ -3,6 +3,7 @@ Sanitize
 This is a simple Perl module to sanitize user input. Here are some examples of its use:
 
     use Sanitize;
+    
     sanitize("fd gfd*#(sd)", alpha => 1); # Returns: "fggfdsd"
     sanitize("The ip is 192.168.3.53:80", ip => 1); # Returns: "192.168.3.53"
     sanitize("The ip is 192.168.3.53:80", port => 1); # Returns: "80"
